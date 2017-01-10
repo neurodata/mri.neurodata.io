@@ -9,7 +9,7 @@ dropcap:			true
 # or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
 #url:        	 http://localhost:4000 
-url:        	 http://mri.neurodata.io
+url:        	 http://docs.neurodata.io/mri.neurodata.io/
 wpm:          200
 
 # Owner/author information
