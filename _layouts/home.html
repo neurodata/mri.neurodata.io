@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% include head.html %}
+</head>
+<body class="home-template" itemscope itemtype="http://schema.org/WebPage">
+	<header class="notepad-page-header">
+  	<div class="notepad-page-menu-header">
+    	<a class="notepad-blog-logo" href="{{ site.url }}">
+				<img src="{{ site.url }}/images/{{ site.logolight }}" alt="Blog Logo">
+				<h3 style="display:inline; color:#dfd6c2"> MRI @ NeuroData </h3>
+			</a>
+		</div>
+	</header>
+
+<main class="notepad-content" role="main">
+            {{ content }}
+</main>
+    {% include footer.html %}
+
+{% include scripts.html %}  
+</body>
+</html>
