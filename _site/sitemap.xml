@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://localhost:4000</loc>
+        <loc>http://docs.neurodata.io/mri.neurodata.io</loc>
     </url>
     
     
     <url>
-        <loc>http://localhost:4000/404.html</loc>
+        <loc>http://docs.neurodata.io/mri.neurodata.io/404.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/about/index.html</loc>
+        <loc>http://docs.neurodata.io/mri.neurodata.io/about/index.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/feed.xml</loc>
+        <loc>http://docs.neurodata.io/mri.neurodata.io/feed.xml</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/index.html</loc>
+        <loc>http://docs.neurodata.io/mri.neurodata.io/index.html</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/links.jsonp</loc>
+        <loc>http://docs.neurodata.io/mri.neurodata.io/links.jsonp</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/search.json</loc>
+        <loc>http://docs.neurodata.io/mri.neurodata.io/search.json</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/sitemap.xml</loc>
+        <loc>http://docs.neurodata.io/mri.neurodata.io/sitemap.xml</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/tags/index.html</loc>
+        <loc>http://docs.neurodata.io/mri.neurodata.io/tags/index.html</loc>
     </url>
     
 
