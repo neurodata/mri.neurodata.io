@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://docs.neurodata.io/mri.neurodata.io</loc>
+    </url>
+    
+    
+    <url>
+        <loc>http://docs.neurodata.io/mri.neurodata.io/404.html</loc>
+    </url>
+    
+    <url>
+        <loc>http://docs.neurodata.io/mri.neurodata.io/about/index.html</loc>
+    </url>
+    
+    <url>
+        <loc>http://docs.neurodata.io/mri.neurodata.io/feed.xml</loc>
+    </url>
+    
+    <url>
+        <loc>http://docs.neurodata.io/mri.neurodata.io/index.html</loc>
+    </url>
+    
+    <url>
+        <loc>http://docs.neurodata.io/mri.neurodata.io/links.jsonp</loc>
+    </url>
+    
+    <url>
+        <loc>http://docs.neurodata.io/mri.neurodata.io/search.json</loc>
+    </url>
+    
+    <url>
+        <loc>http://docs.neurodata.io/mri.neurodata.io/sitemap.xml</loc>
+    </url>
+    
+    <url>
+        <loc>http://docs.neurodata.io/mri.neurodata.io/tags/index.html</loc>
+    </url>
+    
+
+    
+</urlset>
