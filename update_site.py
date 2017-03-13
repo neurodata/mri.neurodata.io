@@ -135,6 +135,7 @@ def main():
 
     dsets = scan_bucket(bucket, bpath)
     dsets.remove('NKI24') if 'NKI24' in dsets else dsets
+    dsets.remove('resources') if 'resources' in dsets else dsets
 
     for dset in dsets:
         path = bpath + dset
@@ -155,6 +156,8 @@ def main():
                 derivs = ['#'] * 7
             else:
                 derivs = [to_url((dset, ver, d, '')) for d in derivs]
+                d = derivs
+                derivs = [d[3], d[4], d[0], d[1], d[2]]
                 derivs += [ver.replace('-', '.', 2).strip('ndmg_')] * 2
                 tabl.write(row_bulk.format(*derivs))
 
