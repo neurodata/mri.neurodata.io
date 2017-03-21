@@ -1,5 +1,5 @@
-title:            MRI NeuroData
-description:      "Home of all things MRI @ NeuroData"
+title:          m2g @ NeuroData
+description:    "NeuroData's home for M3RI derived graphs, tools, and services"
 logodark:             neurodata.png
 logolight:            neurodata.png
 disqus_shortname: ndata
