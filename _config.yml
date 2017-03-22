@@ -1,7 +1,7 @@
 title:          m2g @ NeuroData
 description:    "NeuroData's home for M3RI derived graphs, tools, and services"
-logodark:             neurodata.png
-logolight:            neurodata.png
+logodark:             ndmg.png
+logolight:            ndmg.png
 disqus_shortname: ndata
 share:            true
 dropcap:			true
