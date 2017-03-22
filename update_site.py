@@ -39,8 +39,8 @@ ref = {'SWU4': 'http://fcon_1000.projects.nitrc.org/indi/CoRR/html/swu_4.html',
        'KKI2009': 'http://mri.kennedykrieger.org/databases.html#Kirby21',
        'NKIENH': 'http://fcon_1000.projects.nitrc.org/indi/enhanced/',
        'NKI1': 'http://fcon_1000.projects.nitrc.org/indi/CoRR/html/nki_1.html',
-       'Jung2015': '#',
-       'MRN114': '#',
+       'Templeton255': '#',
+       'Templeton114': '#',
        'MRN1313': '#'}
 
 page_s = """
@@ -134,8 +134,9 @@ def main():
     tabl.write(page_s)
 
     dsets = scan_bucket(bucket, bpath)
-    dsets.remove('NKI24') if 'NKI24' in dsets else dsets
-    dsets.remove('resources') if 'resources' in dsets else dsets
+    seqs = ['NKI24', 'resources', 'MRN114', 'Jung2015']
+    for seq in seqs:
+        dsets.remove(seq) if seq in dsets else dsets
 
     for dset in dsets:
         path = bpath + dset
