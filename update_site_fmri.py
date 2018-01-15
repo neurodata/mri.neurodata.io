@@ -139,7 +139,7 @@ def scan_bucket(bucket, path):
 
 
 def to_url(things):
-    base = 'http://mrneurodata.s3-website-us-east-1.amazonaws.com/{}'
+    base = 'http://mrneurodata.s3-website-us-east-1.amazonaws.com/fmri/{}'
     return base.format('/'.join(things))
     
 
@@ -168,14 +168,23 @@ def main():
         if vers:
             ver = sorted(vers, reverse=True)[0]
             derpath = path + '/' + ver + '/func'
-            derivs = scan_bucket(bucket, derpath)
-            qapath = path + '/' + ver
-            derivs += scan_bucket(bucket, qapath)
-            if not derivs:
-                derivs = ['#'] * 8
+            derderivs = scan_bucket(bucket, derpath)
+            if derderivs:
+                derderivs = [to_url((dset, ver, 'func', d, '')) for d in derderivs]
             else:
-                derivs = [to_url((dset, ver, d, '')) for d in derivs]
-                d = derivs
+                derderivs = ['#']*5
+            qapath = path + '/' + ver
+            qaderivs = scan_bucket(bucket, qapath)
+            if qaderivs:
+                qaderivs = [to_url((dset, ver, d, '')) for d in derderivs]
+                derderivs += qaderivs
+            else:
+                derderivs += ['#']*3
+            if not derderivs:
+                derderivs = ['#'] * 8
+            else:
+                print(dset)
+                d = derderivs
                 derivs = [d[2], d[3], d[0], d[4], d[1], d[7]]
                 derivs += ['m3r-release', ver.replace('-', '.', 2).strip('ndmg_')]
                 tabl.write(row_bulk.format(*derivs))
